@@ -28,12 +28,6 @@ configure_file (
   "${PROJECT_BINARY_DIR}/TutorialConfig.h"
 )
 
-if (HAVE_LOG)
-  message("HAVE_LOG")
-else (HAVE_LOG)
-  message("Not HAVE_LOG")
-endif (HAVE_LOG)
-
 # add the binary tree to the search path for include files
 # so that we will find TutorialConfig.h
 include_directories("${PROJECT_BINARY_DIR}")
