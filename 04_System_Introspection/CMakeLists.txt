@@ -8,12 +8,6 @@ include (CheckFunctionExists)
 check_function_exists (log HAVE_LOG)
 check_function_exists (exp HAVE_EXP)
 
-if (HAVE_LOG)
-  message("HAVE_LOG")
-else (HAVE_LOG)
-  message("Not HAVE_LOG")
-endif (HAVE_LOG)
-
 # The version number.
 set (Tutorial_VERSION_MAJOR 1)
 set (Tutorial_VERSION_MINOR 0)
